@@ -9,6 +9,7 @@ function countLikes() {
 
 	function changeHtml (e) {
 		counter++;
-		$btn.html(counter + ' likes');
+		if(counter == 1) $btn.html(counter + ' like');
+		else $btn.html(counter + ' likes');
 	}
 }
